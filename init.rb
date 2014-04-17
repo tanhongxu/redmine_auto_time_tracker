@@ -2,7 +2,7 @@ Rails.logger.info 'Starting Auto Time Tracker plugin for RedMine'
 
 require 'redmine'
 
-require 'ceo_auto_time_tracker_hooks'
+require 'ceo_auto_time_tracker_patch'
 
 if Rails::VERSION::MAJOR < 3
   require 'dispatcher'
