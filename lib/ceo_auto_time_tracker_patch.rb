@@ -15,7 +15,6 @@ module CEOAutoTimeTrackerPatch
       update_without_time_track
       
       if params[:status_id] == '2' # status_id is new status, changed from 'any' -> 'in process'
-      	Rails.logger.info '111111111111111'
       	
         # get time tracker and start it
         @time_tracker = TimeTracker.new(:issue_id => params[:id], :activity_id => 9, :project_id => params[:project_id])
